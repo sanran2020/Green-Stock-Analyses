@@ -1,19 +1,19 @@
 # Module 2 Challenge - VBA_Challenge 
 #
 ## Overview of the project
-The client is trying to evaluate the stocks to invest in using two metrics: a) Total daily volume and b) returns. While there is an existing code that automates the calculations needed, it is unoptimized. The goal of the project is refactor the code to speed up the analyses and summarize the data.
+#### The client is trying to evaluate the stocks to invest in using two metrics: a) Total daily volume and b) returns. While there is an existing code that automates the calculations needed, it is unoptimized. The goal of the project is refactor the code to speed up the analyses and summarize the data.
 #
 ## Results
-*Stock analyses* - ENPH and RUN were the only two stocks that consistently provided positive returns for both 2017 and 2018. The rest of the stocks (excluding TERP) while were positive for 2017, were negative for 2018. The returns were different for the two years, despite the volumes being similar.
+#### *Stock analyses* - ENPH and RUN were the only two stocks that consistently provided positive returns for both 2017 and 2018. The rest of the stocks (excluding TERP) while were positive for 2017, were negative for 2018. The returns were different for the two years, despite the volumes being similar.
 
 <img width="206" alt="2017 Stock Performance" src="https://user-images.githubusercontent.com/89116627/131235560-40e68d7a-a23c-494a-ad2f-9b5ca6a915a4.PNG"> <img width="198" alt="2018 Stock Performance" src="https://user-images.githubusercontent.com/89116627/131235577-6bec093d-cb32-4af6-b826-64653a32c0aa.PNG">
 
 
-*Refactor code results* - The Original code took *0.72s* to run, while the Refactored code *0.05s* to run. 
+#### *Refactor code results* - The Original code took *0.72s* to run, while the Refactored code *0.05s* to run. 
 ######
-Original Code <img width="226" alt="Original VBA_2017" src="https://user-images.githubusercontent.com/89116627/131235630-94d32045-84ff-401e-a371-7a8eb5cf989c.PNG"> Refactored Code <img width="239" alt="refactored time 2017" src="https://user-images.githubusercontent.com/89116627/131235634-5fd38289-31d3-4701-acbb-a140d2f637f7.PNG">
+###### Original Code <img width="226" alt="Original VBA_2017" src="https://user-images.githubusercontent.com/89116627/131235630-94d32045-84ff-401e-a371-7a8eb5cf989c.PNG"> Refactored Code <img width="239" alt="refactored time 2017" src="https://user-images.githubusercontent.com/89116627/131235634-5fd38289-31d3-4701-acbb-a140d2f637f7.PNG">
 ######
-*Refactor code improvements* - Two key improvements - (a) Reduced looping over the entire table for each stock (b) Flipping b/w sheets for input and output updates
+#### *Refactor code improvements* - Two key improvements - (a) Reduced looping over the entire table for each stock (b) Flipping b/w sheets for input and output updates
 ######
 ##### (a) Unoptimized code loop 
 
@@ -37,7 +37,7 @@ Original Code <img width="226" alt="Original VBA_2017" src="https://user-images.
             
                End If
 ######
-##### (a) Unoptimized code flip sheets 
+##### (b) Unoptimized code flip sheets 
 
           '4) Loop through tickers
            For i = 0 To 11
@@ -47,7 +47,7 @@ Original Code <img width="226" alt="Original VBA_2017" src="https://user-images.
                Worksheets("2018").Activate
            '6) Output data for current ticker
                Worksheets("All Stocks Analysis").Activate 
-##### (a) Refactored code flip sheets
+##### (b) Refactored code flip sheets
 
             'Activate data worksheet
                Worksheets(yearValue).Activate
