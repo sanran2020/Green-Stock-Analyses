@@ -63,7 +63,7 @@
 #
 ## Summary 1
 a) Advantages of the refactoring code - Refactoring code is essentially optimization of existing potentially POC code. It enables optimization of memory usage, as well as performance given the knowledge of input and outputs.
-######
+
 b) Disadvantages of refactoring code - Refactoring code (as I currently understand it), is meant for optimization of existing POC code. Refactoring prior to understanding the input/output could lead to lots of re-coding.
 ## Summary 2
 Given the initial code was available, along with results from that code, refactoring made sense. The original code was inefficient due to looping the entire table for each stock, instead of looping the table once and synthesizing the information. Additionally, the original code was flipping b/w worksheets which reduces performance.
