@@ -13,7 +13,7 @@
 ######
 ###### Original Code <img width="226" alt="Original VBA_2017" src="https://user-images.githubusercontent.com/89116627/131235630-94d32045-84ff-401e-a371-7a8eb5cf989c.PNG"> Refactored Code <img width="239" alt="refactored time 2017" src="https://user-images.githubusercontent.com/89116627/131235634-5fd38289-31d3-4701-acbb-a140d2f637f7.PNG">
 ######
-#### *Refactor code improvements* - Two key improvements - (a) Reduced looping over the entire table for each stock (b) Flipping b/w sheets for input and output updates
+#### *Refactor code improvements* - Two key improvements - (a) Not looping over the entire table for each stock (b) Flipping b/w sheets for input and output updates
 ######
 ##### (a) Unoptimized code loop 
 
