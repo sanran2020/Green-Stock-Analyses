@@ -1,9 +1,9 @@
 # Module 2 Challenge - VBA_Challenge 
 #
 ## Overview of the project
-###The client is trying to evaluate the stocks to invest in using two metrics: a) Total daily volume and b) returns. While there is an existing code that automates the calculations needed, it is unoptimized. The goal of the project is refactor the code to speed up the analyses and summarize the data.
+The client is trying to evaluate the stocks to invest in using two metrics: a) Total daily volume and b) returns. While there is an existing code that automates the calculations needed, it is unoptimized. The goal of the project is refactor the code to speed up the analyses and summarize the data.
 #
-##Results
+Results
 ### *Stock analyses* - ENPH and RUN were the only two stocks that consistently provided positive returns for both 2017 and 2018. The rest of the stocks (excluding TERP) while were positive for 2017, were negative for 2018. The returns were different for the two years, despite the volumes being similar.
 ### *Refactor code results* - The Original code took *0.72s* to run, while the refactored code *0.05s* to run. 
 #
